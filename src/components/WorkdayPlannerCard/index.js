@@ -12,6 +12,13 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 345,
   },
+  card: {
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    margin: 10,
+
+},
 });
 
 export default function ImgMediaCard() {
@@ -24,7 +31,7 @@ export default function ImgMediaCard() {
           component="img"
           alt="Contemplative Reptile"
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image="https://source.unsplash.com/random"
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -32,7 +39,7 @@ export default function ImgMediaCard() {
             Workday Planner
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-          It's a simple application that can save the use of paper memos on a daily basis and help keep one more organized with daily work tasks.
+          An application that lets the users keep memos for each hour of the workday and be organized with daily work tasks.
           </Typography>
         </CardContent>
       </CardActionArea>
