@@ -29,11 +29,11 @@ export default function ImgMediaCard() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            Final Fantasy Quiz
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          This is a fun quiz, written in javascript with a classic Final Fantasy theme. It is a timed quiz
+              and each wrong question deducts time. Remaining time left results in your score.
           </Typography>
         </CardContent>
       </CardActionArea>

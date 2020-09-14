@@ -31,6 +31,7 @@ export default function ButtonAppBar() {
           <Button color="inherit">About</Button>
           <Button color="inherit">Projects</Button>
           <Button color="inherit">Portfolio</Button>
+          <Button color="inherit">Technologies</Button>
         </Toolbar>
       </AppBar>
     </div>
