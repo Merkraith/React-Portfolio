@@ -50,14 +50,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Album() {
-    const [spacing, setSpacing] = React.useState(2);
+    // const [spacing, setSpacing] = React.useState(2);
     const classes = useStyles();
 
-    const handleChange = (event) => {
-        setSpacing(Number(event.target.value));
-    };
+    // const handleChange = (event) => {
+    //     setSpacing(Number(event.target.value));
+
     return (
-       <div>
+        <div>
             <CssBaseline />
             <Container className={classes.cardGrid} maxWidth="md">
                 <Grid justify="center" container spacing={4}>
@@ -100,9 +100,9 @@ export default function Album() {
                                     Watcher
                                 </Typography>
                                 <Typography>
-                                     My second group project in UW Coding Bootcamp. "Watcher" is a neighborhood watch application.  
-                                     Users can assign themselves a username and post a message into the feed, then the map dynamically posts 
-                                     the message at their location at that time. 
+                                    My second group project in UW Coding Bootcamp. "Watcher" is a neighborhood watch application.
+                                    Users can assign themselves a username and post a message into the feed, then the map dynamically posts
+                                    the message at their location at that time.
                                 </Typography>
                             </CardContent>
                             <CardActions >
@@ -128,9 +128,9 @@ export default function Album() {
                                 </Typography>
                                 <Typography>
                                     My third group project at UW Coding Bootcamp. "Dev Connect"  is an application that allows for
-                                     developers to connect with each other. The site allows prospective clients to post job ads with specific qualifications. 
-                                     The application allows for web developers to highlight their skills and connect with other developers to share knowledge 
-                                     and collaborate with one another.
+                                    developers to connect with each other. The site allows prospective clients to post job ads with specific qualifications.
+                                    The application allows for web developers to highlight their skills and connect with other developers to share knowledge
+                                    and collaborate with one another.
                                 </Typography>
                             </CardContent>
                             <CardActions>
@@ -147,4 +147,4 @@ export default function Album() {
             </Container>
         </div>
     );
-}
+};
