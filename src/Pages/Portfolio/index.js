@@ -14,6 +14,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import GroupProjects from '../../components/GroupProjects';
 
 function Copyright() {
     return (
@@ -23,7 +24,7 @@ function Copyright() {
                 Your Website
       </Link>{' '}
             {new Date().getFullYear()}
-            {'.'}
+            {'.'}   
         </Typography>
     );
 }
@@ -110,90 +111,7 @@ export default function Album() {
                         </div>
                     </Container>
                 </div>
-                <Container className={classes.cardGrid} maxWidth="md">
-                    <Grid justify="center" container spacing={4}>
-                        <Grid align="center" xs={12} sm={6} md={4} >
-
-                            <Card className={classes.card}>
-                                <CardMedia
-                                    className={classes.cardMedia}
-                                    image="https://source.unsplash.com/random"
-                                    title="Image title"
-                                />
-                                <CardContent className={classes.cardContent}>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        Find Next Gig
-                                     </Typography>
-                                    <Typography>
-                                        My first group project in UW Coding Bootcamp. We developed a web based application
-                                        that allowed the user to type in the name of a band, then it would display information for their next gig.
-                                        It would also give a map display and put a pin on the city of the next gig.
-                                    </Typography>
-                                </CardContent>
-                                <CardActions>
-                                    <Button size="small" color="primary">
-                                        Git Repo
-                                    </Button>
-                                    <Button size="small" color="primary">
-                                        Deployed 
-                                    </Button>
-                                </CardActions>
-                            </Card>
-
-                        </Grid>
-                        <Grid align="center" xs={12} sm={6} md={4}>
-                            <Card className={classes.card}>
-                                <CardMedia
-                                    className={classes.cardMedia}
-                                    image="https://source.unsplash.com/random"
-                                    title="Image title"
-                                />
-                                <CardContent className={classes.cardContent}>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        Watcher
-                                    </Typography>
-                                    <Typography>
-                                        My first group project in UW Coding Bootcamp. We developed a web based application
-                                        that allowed the user to type in the name of a band, then it would display information for their next gig.
-                                        It would also give a map display and put a pin on the city of the next gig.
-                                    </Typography>
-                                </CardContent>
-                                <CardActions>
-                                    <Button size="small" color="primary">
-                                        View
-                                    </Button>
-
-                                </CardActions>
-                            </Card>
-
-                        </Grid>
-                        <Grid align="center" xs={12} sm={6} md={4}>
-                            <Card className={classes.card}>
-                                <CardMedia
-                                    className={classes.cardMedia}
-                                    image="https://source.unsplash.com/random"
-                                    title="Image title"
-                                />
-                                <CardContent className={classes.cardContent}>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        DevConn
-                                    </Typography>
-                                    <Typography>
-                                        My first group project in UW Coding Bootcamp. We developed a web based application
-                                        that allowed the user to type in the name of a band, then it would display information for their next gig.
-                                        It would also give a map display and put a pin on the city of the next gig.
-                                    </Typography>
-                                </CardContent>
-                                <CardActions>
-                                    <Button size="small" color="primary">
-                                        View
-                                    </Button>
-
-                                </CardActions>
-                            </Card>
-                        </Grid>
-                    </Grid>
-                </Container>
+                <GroupProjects/>
             </main>
             {/* Footer */}
             <footer className={classes.footer}>
