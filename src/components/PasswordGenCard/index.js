@@ -8,6 +8,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import PWGen from '../../images/pwgen.jpg';
+import Link from '@material-ui/core/Link';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import DvrIcon from '@material-ui/icons/Dvr';
 
 
 const useStyles = makeStyles({
@@ -49,9 +52,12 @@ export default function ImgMediaCard() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    Deployed Link
-                </Button>
+            <Button size="small" color="primary">
+          <Link href="https://github.com/Merkraith/The-Amazing-Password-Generator"> <GitHubIcon style={{ color: "#212121" }} className={classes.text} fontSize="large" /></Link>
+        </Button>
+        <Button size="small" color="primary">
+          <Link href="https://merkraith.github.io/The-Amazing-Password-Generator/"> <DvrIcon style={{ color: "#212121" }} className={classes.text} fontSize="large" /></Link>
+        </Button>
             </CardActions>
         </Card>
     );

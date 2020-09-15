@@ -11,6 +11,7 @@ import EmailIcon from '@material-ui/icons/Email';
 import WorkIcon from '@material-ui/icons/Work';
 import Paper from '@material-ui/core/Paper';
 import Mark from '../../images/mark.jpg'
+import Resume from '../../images/resume.pdf'
 import Card from '@material-ui/core/Card';
 import Container from '@material-ui/core/Container';
 import Wrapper from "../../components/Wrapper";
@@ -106,7 +107,8 @@ export default function ComplexGrid() {
                                         <Link href="https://github.com/Merkraith"> <GitHubIcon className={classes.text} fontSize="large" /></Link>
                                     </Button>
                                     <Button>
-                                        <Link href="https://merkraith.github.io/portfolio/files/mhresume.pdf"><WorkIcon className={classes.text} fontSize="large" /></Link>
+                                        <Link href={Resume}>
+                                            <WorkIcon className={classes.text} fontSize="large" /></Link>
                                     </Button>
                                     <Button>
                                         <Link href="mailto:mark.heil1122@gmail.com"> <EmailIcon className={classes.text} fontSize="large" /></Link>

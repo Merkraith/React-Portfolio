@@ -13,6 +13,8 @@ import Link from '@material-ui/core/Link';
 import FindNextGig from '../../images/findnextgig.jpg';
 import Watcher from '../../images/watcher.jpg';
 import DevConnect from '../../images/devconnect.jpg';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import DvrIcon from '@material-ui/icons/Dvr';
 
 
 
@@ -98,10 +100,10 @@ export default function Album() {
                             </CardContent>
                             <CardActions>
                                 <Button size="small" color="primary">
-                                    Git Repo
+                                <Link href="https://github.com/Merkraith/Band-Tour-Manager"> <GitHubIcon style={{ color: "#212121" }} className={classes.text} fontSize="large" /></Link>
                                 </Button>
                                 <Button size="small" color="primary">
-                                    Deployed
+                                <Link href="https://merkraith.github.io/Band-Tour-Manager/"> <DvrIcon style={{ color: "#212121" }} className={classes.text} fontSize="large" /></Link>
                                 </Button>
                             </CardActions>
                         </Card>
@@ -125,10 +127,10 @@ export default function Album() {
                             </CardContent>
                             <CardActions >
                                 <Button size="small" color="primary">
-                                    Git Repo
+                                <Link href="https://github.com/nobobobo/watcher"> <GitHubIcon style={{ color: "#212121" }} className={classes.text} fontSize="large" /></Link>
                                 </Button>
                                 <Button size="small" color="primary">
-                                    Deployed
+                                <Link href="https://quiet-shelf-40896.herokuapp.com/"> <DvrIcon style={{ color: "#212121" }} className={classes.text} fontSize="large" /></Link>
                                 </Button>
                             </CardActions>
                         </Card>
@@ -153,10 +155,10 @@ export default function Album() {
                             </CardContent>
                             <CardActions>
                                 <Button size="small" color="primary">
-                                    Git Repo
+                                <Link href="https://github.com/patrick-merrick/project-three"> <GitHubIcon style={{ color: "#212121" }} className={classes.text} fontSize="large" /></Link>
                                 </Button>
                                 <Button size="small" color="primary">
-                                    Deployed
+                                <Link href="http://devconnexion.com/"> <DvrIcon style={{ color: "#212121" }} className={classes.text} fontSize="large" /></Link>
                                 </Button>
                             </CardActions>
                         </Card>

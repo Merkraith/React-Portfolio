@@ -8,6 +8,8 @@ import QuizCard from '../../components/QuizCard';
 import WorkdayPlannerCard from '../../components/WorkdayPlannerCard';
 import WeatherDashboardCard from '../../components/WeatherDashboardCard';
 import Typography from '@material-ui/core/Typography';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import DvrIcon from '@material-ui/icons/Dvr';
 
 
 
