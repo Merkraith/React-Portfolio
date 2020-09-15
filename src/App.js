@@ -66,6 +66,7 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     maxWidth: '100px',
+    maxHeight: '100px',
     width: '100%',
     flexDirection: 'column',
     margin: 5,
@@ -143,15 +144,15 @@ function App() {
             >Technologies
             </Typography>
             <Wrapper>
-              <img className={classes.img} height="auto" alt="htmlcssjs" src={Htmlcssjs} />
-              <img className={classes.img} height="auto" alt="jquery" src={Jquery} />
-              <img className={classes.img} height="auto" alt="bootstrap" src={Bootstrap} />
-              <img className={classes.img} height="auto" alt="node" src={Node} />
-              <img className={classes.img} height="auto" alt="heroku" src={Heroku} />
-              <img className={classes.img} height="auto" alt="mysql" src={Mysql} />
-              <img className={classes.img} height="auto" alt="materialize" src={Materialize} />
-              <img className={classes.img} height="auto" alt="react" src={Reactlogo} />
-              <img className={classes.img} height="auto" alt="materialui" src={MaterialUI} />
+              <img className={classes.img} alt="htmlcssjs" src={Htmlcssjs} />
+              <img className={classes.img} alt="jquery" src={Jquery} />
+              <img className={classes.img} alt="bootstrap" src={Bootstrap} />
+              <img className={classes.img} alt="node" src={Node} />
+              <img className={classes.img} alt="heroku" src={Heroku} />
+              <img className={classes.img} alt="mysql" src={Mysql} />
+              <img className={classes.img} alt="materialize" src={Materialize} />
+              <img className={classes.img} alt="react" src={Reactlogo} />
+              <img className={classes.img} alt="materialui" src={MaterialUI} />
             </Wrapper>
           </footer>
         </div>
