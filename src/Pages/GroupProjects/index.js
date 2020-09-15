@@ -1,19 +1,20 @@
 import React from 'react';
-// import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
-// import CameraIcon from '@material-ui/icons/PhotoCamera';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
-// import Paper from '@material-ui/core/Paper';
-// import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-// import Link from '@material-ui/core/Link';
+import Link from '@material-ui/core/Link';
+import FindNextGig from '../../images/findnextgig.jpg';
+import Watcher from '../../images/watcher.jpg';
+import DevConnect from '../../images/devconnect.jpg';
+
+
 
 const useStyles = makeStyles((theme) => ({
     icon: {
@@ -82,8 +83,8 @@ export default function Album() {
                         <Card className={classes.card}>
                             <CardMedia
                                 className={classes.cardMedia}
-                                image="https://source.unsplash.com/random"
-                                title="Image title"
+                                image={FindNextGig}
+                                title="Find Next Gig"
                             />
                             <CardContent className={classes.cardContent}>
                                 <Typography gutterBottom variant="h5" component="h2">
@@ -109,8 +110,8 @@ export default function Album() {
                         <Card className={classes.card}>
                             <CardMedia
                                 className={classes.cardMedia}
-                                image="https://source.unsplash.com/random"
-                                title="Image title"
+                                image={Watcher}
+                                title="Watcher"
                             />
                             <CardContent className={classes.cardContent}>
                                 <Typography gutterBottom variant="h5" component="h2">
@@ -136,8 +137,8 @@ export default function Album() {
                         <Card className={classes.card}>
                             <CardMedia
                                 className={classes.cardMedia}
-                                image="https://source.unsplash.com/random"
-                                title="Image title"
+                                image={DevConnect}
+                                title="Dev Connect"
                             />
                             <CardContent className={classes.cardContent}>
                                 <Typography gutterBottom variant="h5" component="h2">
@@ -145,7 +146,7 @@ export default function Album() {
                                 </Typography>
                                 <Typography>
                                     My third group project at UW Coding Bootcamp. "Dev Connect"  is an application that allows for
-                                    developers to connect with each other. The site allows prospective clients to post job ads with specific qualifications.
+                                    developers to connect with each other.
                                     The application allows for web developers to highlight their skills and connect with other developers to share knowledge
                                     and collaborate with one another.
                                 </Typography>

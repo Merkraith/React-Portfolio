@@ -7,11 +7,15 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import PWGen from '../../images/pwgen.jpg';
+
 
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
-    },
+        margin: 20,
+        paddingTop: 20,
+        },
     card: {
         height: '100%',
         display: 'flex',
@@ -29,9 +33,9 @@ export default function ImgMediaCard() {
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    alt="Contemplative Reptile"
+                    alt="PWGen"
                     height="140"
-                    image="https://source.unsplash.com/random"
+                    image={PWGen}
                     title="Contemplative Reptile"
                 />
                 <CardContent>

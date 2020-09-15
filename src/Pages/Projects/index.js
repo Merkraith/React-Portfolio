@@ -11,6 +11,8 @@ import Typography from '@material-ui/core/Typography';
 
 
 
+
+
 const useStyles = makeStyles((theme) => ({
     icon: {
         marginRight: theme.spacing(2),
@@ -30,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        margin: 10,
+        
 
     },
     cardMedia: {
