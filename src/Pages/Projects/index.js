@@ -3,10 +3,12 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import PasswordGenCard from '../PasswordGenCard';
-import QuizCard from '../QuizCard';
-import WorkdayPlannerCard from '../WorkdayPlannerCard';
-import WeatherDashboardCard from '../WeatherDashboardCard';
+import PasswordGenCard from '../../components/PasswordGenCard';
+import QuizCard from '../../components/QuizCard';
+import WorkdayPlannerCard from '../../components/WorkdayPlannerCard';
+import WeatherDashboardCard from '../../components/WeatherDashboardCard';
+import Typography from '@material-ui/core/Typography';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -41,6 +43,12 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(6),
     },
+    appBarSpacer: theme.mixins.toolbar,
+    content: {
+      flexGrow: 1,
+      height: "100vh",
+      overflow: "auto",
+    },
 }));
 
 export default function Album() {
@@ -52,7 +60,18 @@ export default function Album() {
 
     return (
         <div>
+            <div className={classes.appBarSpacer} />
+            <div className={classes.appBarSpacer} />
+            <div className={classes.appBarSpacer} />
             <CssBaseline />
+            <Typography
+                align="center"
+                component="h1"
+                variant="h2"
+                color="white"
+            >
+                Projects
+            </Typography>
             <Container className={classes.cardGrid} maxWidth="md">
                 <Grid justify="center" container spacing={4}>
                     <Grid align="center" xs={12} sm={6} md={4}>
