@@ -4,15 +4,14 @@
 [![ForTheBadge uses-js](http://ForTheBadge.com/images/badges/uses-js.svg)](http://ForTheBadge.com)
 
 ![react](/react.png)
+
 ![materialui](/materialui.png)
 
 # React Portfolio
 
-
-
 ## Description
 
-
+This is the most updated version of my personal portfolio. The application was built with React. It utilizes functional components, Links (react-router-dom), & Router (react-router-dom). The portfolio showcases an about page, group project page, & project page.
 
 ## Deployed Link
 
