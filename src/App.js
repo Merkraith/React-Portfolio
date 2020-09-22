@@ -21,12 +21,6 @@ import Node from './images/node.png';
 import Reactlogo from './images/react.png';
 import Wrapper from "./components/Wrapper";
 
-
-
-
-
-
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -118,6 +112,7 @@ function App() {
                         </Button>
                       </ButtonGroup>
                     </Grid>
+
                   </Grid>
                 </Box>
               </Box>
@@ -127,9 +122,10 @@ function App() {
         <div>
           <div>
             <Switch>
+              <Route exact path='/' component={About} />
               <Route exact path='/Pages/About' component={About} />
-              <Route path='/Pages/GroupProjects' component={GroupProjects} />
-              <Route path='/Pages/Projects' component={Projects} />
+              <Route exact path='/Pages/GroupProjects' component={GroupProjects} />
+              <Route exact path='/Pages/Projects' component={Projects} />
             </Switch>
           </div>
         </div>
