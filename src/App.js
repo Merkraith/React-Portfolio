@@ -10,16 +10,16 @@ import GroupProjects from './Pages/GroupProjects';
 import Projects from './Pages/Projects';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
-import Bootstrap from './images/bootstrap.png';
-import Heroku from './images/heroku.png';
-import Htmlcssjs from './images/htmlcssjs.png';
-import Jquery from './images/jquery.png';
-import Materialize from './images/materialize.png';
-import MaterialUI from './images/materialui.png';
-import Mysql from './images/mysql.png';
-import Node from './images/node.png';
-import Reactlogo from './images/react.png';
-import Wrapper from "./components/Wrapper";
+// import Bootstrap from './images/bootstrap.png';
+// import Heroku from './images/heroku.png';
+// import Htmlcssjs from './images/htmlcssjs.png';
+// import Jquery from './images/jquery.png';
+// import Materialize from './images/materialize.png';
+// import MaterialUI from './images/materialui.png';
+// import Mysql from './images/mysql.png';
+// import Node from './images/node.png';
+// import Reactlogo from './images/react.png';
+// import Wrapper from "./components/Wrapper";
 
 import {
   BrowserRouter as Router,
@@ -46,8 +46,9 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
   },
   footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
+    backgroundColor: '#333333',
+    padding: theme.spacing(2),
+    textAlign: 'center',
   },
   bg: {
     backgroundColor: '#212121',
@@ -56,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
   bg2: {
     backgroundColor: '#364150',
     color: 'white',
+    padding: theme.spacing(2),
 
   },
   img: {
@@ -66,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 5,
 
   },
-  } 
+}
 ));
 
 
@@ -83,38 +85,21 @@ function App() {
           <AppBar className={classes.bg2} position="fixed" justifyContent="center">
             <div style={{ width: '100%' }}>
               <Box display="flex" justifyContent="center" m={1} p={1} >
-                <Box>
-                  <Typography
-                    align="center"
-                    component="h1"
-                    variant="h2"
-                    color="textPrimary"
-                    noWrap
-                    className={classes.title}
-                  >
-                    Portfolio
-                  </Typography>
-                </Box>
-              </Box>
-              <Box display="flex" justifyContent="center" m={1} p={1} >
-                <Box>
-                  <Grid item xs={12} sm container>
-                    <Grid container spacing={spacing} justify="center">
-                      <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
-                        <Button>
-                          <Link className={classes.text} to={'/Pages/About'}>About</Link>
-                        </Button>
-                        <Button>
-                          <Link className={classes.text} to={'/Pages/GroupProjects'}>Group Projects</Link>
-                        </Button>
-                        <Button>
-                          <Link className={classes.text} to={'/Pages/Projects'}>Projects</Link>
-                        </Button>
-                      </ButtonGroup>
-                    </Grid>
-
+                <Grid item xs={12} sm container>
+                  <Grid container spacing={spacing} justify="center">
+                    <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
+                      <Button>
+                        <Link className={classes.text} to={'/Pages/About'}>About</Link>
+                      </Button>
+                      <Button>
+                        <Link className={classes.text} to={'/Pages/GroupProjects'}>Group Projects</Link>
+                      </Button>
+                      <Button>
+                        <Link className={classes.text} to={'/Pages/Projects'}>Projects</Link>
+                      </Button>
+                    </ButtonGroup>
                   </Grid>
-                </Box>
+                </Grid>
               </Box>
             </div>
           </AppBar>
@@ -130,9 +115,19 @@ function App() {
           </div>
         </div>
         <div>
-        <div className={classes.appBarSpacer} />
-          <footer className={classes.bg}>
-          <Typography
+          <div className={classes.appBarSpacer} />
+          <footer className={classes.footer}>
+            <span>Mark Heil's React Portfolio &copy; 2020 </span>
+          </footer>
+        </div>
+      </div>
+    </Router >
+  );
+}
+export default App;
+
+
+{/* <Typography
                 align="center"
                 component="h1"
                 variant="h2"
@@ -149,11 +144,4 @@ function App() {
               <img className={classes.img} alt="materialize" src={Materialize} />
               <img className={classes.img} alt="react" src={Reactlogo} />
               <img className={classes.img} alt="materialui" src={MaterialUI} />
-            </Wrapper>
-          </footer>
-        </div>
-      </div>
-    </Router >
-  );
-}
-export default App;
+            </Wrapper> */}
