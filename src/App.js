@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
+import Navbar from './components/Navbar';
+import Home from './Pages/Home';
 import About from './Pages/About';
 import GroupProjects from './Pages/GroupProjects';
 import Projects from './Pages/Projects';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
+
+
 // import Bootstrap from './images/bootstrap.png';
 // import Heroku from './images/heroku.png';
 // import Htmlcssjs from './images/htmlcssjs.png';
@@ -25,7 +23,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
@@ -81,38 +78,14 @@ function App() {
 
     <Router>
       <div className={classes.bg}>
-        <div className={classes.root} >
-          <AppBar className={classes.bg2} position="fixed" justifyContent="center">
-            <div style={{ width: '100%' }}>
-              <Box display="flex" justifyContent="center" m={1} p={1} >
-                <Grid item xs={12} sm container>
-                  <Grid container spacing={spacing} justify="center">
-                    <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
-                      <Button>
-                        <Link className={classes.text} to={'/Pages/About'}>About</Link>
-                      </Button>
-                      <Button>
-                        <Link className={classes.text} to={'/Pages/GroupProjects'}>Group Projects</Link>
-                      </Button>
-                      <Button>
-                        <Link className={classes.text} to={'/Pages/Projects'}>Projects</Link>
-                      </Button>
-                    </ButtonGroup>
-                  </Grid>
-                </Grid>
-              </Box>
-            </div>
-          </AppBar>
-        </div>
+        <Navbar />
         <div>
-          <div>
-            <Switch>
-              <Route exact path='/' component={About} />
-              <Route exact path='/Pages/About' component={About} />
-              <Route exact path='/Pages/GroupProjects' component={GroupProjects} />
-              <Route exact path='/Pages/Projects' component={Projects} />
-            </Switch>
-          </div>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/Pages/About' component={About} />
+            <Route exact path='/Pages/GroupProjects' component={GroupProjects} />
+            <Route exact path='/Pages/Projects' component={Projects} />
+          </Switch>
         </div>
         <div>
           <div className={classes.appBarSpacer} />
