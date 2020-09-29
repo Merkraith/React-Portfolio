@@ -70,7 +70,6 @@ export default function Album() {
         <div>
         <div className={classes.appBarSpacer} />
         <div className={classes.appBarSpacer} />
-        <div className={classes.appBarSpacer} />
             <CssBaseline />
             <Typography
                 align="center"
