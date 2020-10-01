@@ -5,6 +5,7 @@ import PasswordGen from '../../components/PasswordGen';
 import FFQuiz from '../../components/FFQuiz';
 import WorkdayPlanner from '../../components/WorkdayPlanner';
 import WeatherDashboard from '../../components/WeatherDashboard';
+import AvengersRoster from '../../components/AvengersRoster';
 import AppBar from '@material-ui/core/AppBar';
 import PropTypes from 'prop-types';
 import Tabs from '@material-ui/core/Tabs';
@@ -101,6 +102,8 @@ export default function ScrollableTabsButtonAuto() {
                         <Tab className={classes.text} label="FF Quiz" {...a11yProps(1)} />
                         <Tab className={classes.text} label="Planner" {...a11yProps(2)} />
                         <Tab className={classes.text} label="Weather Dashboard" {...a11yProps(3)} />
+                        <Tab className={classes.text} label="Avengers Roster" {...a11yProps(4)} />
+
                     </Tabs>
                 </AppBar>
                 <TabPanel value={value} index={0} className={classes.bg}>
@@ -121,6 +124,11 @@ export default function ScrollableTabsButtonAuto() {
                 <TabPanel value={value} index={3} className={classes.bg}>
                     <div align="center">
                         <WeatherDashboard />
+                    </div>
+                </TabPanel>
+                <TabPanel value={value} index={4} className={classes.bg}>
+                    <div align="center">
+                        <AvengersRoster />
                     </div>
                 </TabPanel>
             </div>
