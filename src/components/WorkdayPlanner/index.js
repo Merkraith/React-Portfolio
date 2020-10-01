@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
   },
   bg: {
     backgroundColor: '#333333',
-}
+  }
 }));
 
 export default function ImgMediaCard() {
@@ -72,8 +72,8 @@ export default function ImgMediaCard() {
     <div>
       <CssBaseline />
       <Container className={classes.cardGrid} maxWidth="md">
-        <Grid align="center" xs={12} sm={4} md={8} >
-        <CardContent className={classes.cardContent}>
+        <Grid align="center" xs={10} sm={10} md={10} lg={10}>
+          <CardContent className={classes.cardContent}>
             <Typography gutterBottom variant="h3" component="h3" className={classes.text2}>
               Workday Planner
             </Typography>
@@ -86,7 +86,7 @@ export default function ImgMediaCard() {
           <div className={classes.root}>
             <Accordion className={classes.bg}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon className={classes.text2}/>}
+                expandIcon={<ExpandMoreIcon className={classes.text2} />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
@@ -94,7 +94,7 @@ export default function ImgMediaCard() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={classes.text2}>
-                An application that lets the users keep memos for each hour of the workday and be organized with daily work tasks.
+                  An application that lets the users keep memos for each hour of the workday and be organized with daily work tasks.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -102,7 +102,7 @@ export default function ImgMediaCard() {
           <div className={classes.root}>
             <Accordion className={classes.bg}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon className={classes.text2}/>}
+                expandIcon={<ExpandMoreIcon className={classes.text2} />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
@@ -117,11 +117,11 @@ export default function ImgMediaCard() {
           </div>
           <Grid item xs={12} sm container className={classes.cardGrid}>
             <Grid container spacing={spacing} justify="center">
-            <Tooltip title="GitHub" aria-label="GitHub">
-              <Link href="https://github.com/Merkraith/Work-Day-Planner"> <GitHubIcon className={classes.text} fontSize="large" /></Link>
+              <Tooltip title="GitHub" aria-label="GitHub">
+                <Link href="https://github.com/Merkraith/Work-Day-Planner"> <GitHubIcon className={classes.text} fontSize="large" /></Link>
               </Tooltip>
               <Tooltip title="Deployed Link" aria-label="Deployed Link">
-              <Link href="https://merkraith.github.io/Work-Day-Planner/"> <DvrIcon className={classes.text} fontSize="large" /></Link>
+                <Link href="https://merkraith.github.io/Work-Day-Planner/"> <DvrIcon className={classes.text} fontSize="large" /></Link>
               </Tooltip>
             </Grid>
           </Grid>

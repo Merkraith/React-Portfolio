@@ -70,10 +70,9 @@ export default function ImgMediaCard() {
   return (
 
     <div>
-
       <CssBaseline />
       <Container className={classes.cardGrid} maxWidth="md">
-        <Grid align="center" xs={12} sm={4} md={8} >
+      <Grid align="center" xs={10} sm={10} md={10} lg={10}>
         <CardContent className={classes.cardContent}>
             <Typography gutterBottom variant="h3" component="h3" className={classes.text2}>
               Final Fantasy Quiz

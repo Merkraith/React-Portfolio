@@ -73,9 +73,7 @@ export default function ImgMediaCard() {
 
       <CssBaseline />
       <Container className={classes.cardGrid} maxWidth="md">
-        {/* <Grid justify="center" container spacing={4}> */}
-        <Grid align="center" xs={12} sm={4} md={8} >
-          {/* <Card className={classes.card}> */}
+        <Grid align="center" xs={10} sm={10} md={10} lg={10}>
           <CardContent className={classes.cardContent}>
             <Typography gutterBottom variant="h3" component="h3" className={classes.text2}>
               Dev Connect
@@ -89,7 +87,7 @@ export default function ImgMediaCard() {
           <div className={classes.root}>
             <Accordion className={classes.bg}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon className={classes.text2}/>}
+                expandIcon={<ExpandMoreIcon className={classes.text2} />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
@@ -107,7 +105,7 @@ export default function ImgMediaCard() {
           <div className={classes.root}>
             <Accordion className={classes.bg}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon className={classes.text2}/>}
+                expandIcon={<ExpandMoreIcon className={classes.text2} />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
@@ -122,7 +120,7 @@ export default function ImgMediaCard() {
           </div>
           <Grid item xs={12} sm container className={classes.cardGrid}>
             <Grid container spacing={spacing} justify="center">
-            <Tooltip title="GitHub" aria-label="GitHub">
+              <Tooltip title="GitHub" aria-label="GitHub">
                 <Link href="https://github.com/patrick-merrick/project-three"> <GitHubIcon className={classes.text} fontSize="large" /></Link>
               </Tooltip>
               <Tooltip title="Deployed Link" aria-label="Deployed Link">
@@ -130,7 +128,6 @@ export default function ImgMediaCard() {
               </Tooltip>
             </Grid>
           </Grid>
-          {/* </Card> */}
         </Grid>
       </Container>
     </div>

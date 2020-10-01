@@ -70,10 +70,9 @@ export default function ImgMediaCard() {
   return (
 
     <div>
-
       <CssBaseline />
       <Container className={classes.cardGrid} maxWidth="md">
-        <Grid align="center" xs={12} sm={4} md={8} >
+        <Grid align="center" xs={10} sm={10} md={10} lg={10}>
           <CardContent className={classes.cardContent}>
             <Typography gutterBottom variant="h3" component="h3" className={classes.text2}>
               Weather Dashboard
@@ -87,7 +86,7 @@ export default function ImgMediaCard() {
           <div className={classes.root}>
             <Accordion className={classes.bg}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon className={classes.text2}/>}
+                expandIcon={<ExpandMoreIcon className={classes.text2} />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
@@ -104,7 +103,7 @@ export default function ImgMediaCard() {
           <div className={classes.root}>
             <Accordion className={classes.bg}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon className={classes.text2}/>}
+                expandIcon={<ExpandMoreIcon className={classes.text2} />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
@@ -119,11 +118,11 @@ export default function ImgMediaCard() {
           </div>
           <Grid item xs={12} sm container className={classes.cardGrid}>
             <Grid container spacing={spacing} justify="center">
-            <Tooltip title="GitHub" aria-label="GitHub">
-              <Link href="https://github.com/Merkraith/Weather-Dashboard"> <GitHubIcon className={classes.text} fontSize="large" /></Link>
+              <Tooltip title="GitHub" aria-label="GitHub">
+                <Link href="https://github.com/Merkraith/Weather-Dashboard"> <GitHubIcon className={classes.text} fontSize="large" /></Link>
               </Tooltip>
               <Tooltip title="Deployed Link" aria-label="Deployed Link">
-              <Link href="https://merkraith.github.io/Weather-Dashboard/"> <DvrIcon className={classes.text} fontSize="large" /></Link>
+                <Link href="https://merkraith.github.io/Weather-Dashboard/"> <DvrIcon className={classes.text} fontSize="large" /></Link>
               </Tooltip>
             </Grid>
           </Grid>
