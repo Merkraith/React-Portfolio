@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Navbar from './components/Navbar';
 import Home from './Pages/Home';
 import About from './Pages/About';
-import GroupProjects from './Pages/GroupProjects';
+import Collaborations from './Pages/Collaborations';
 import Projects from './Pages/Projects';
 
 
@@ -83,7 +83,7 @@ function App() {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/Pages/About' component={About} />
-            <Route exact path='/Pages/GroupProjects' component={GroupProjects} />
+            <Route exact path='/Pages/Collaborations' component={Collaborations} />
             <Route exact path='/Pages/Projects' component={Projects} />
           </Switch>
         </div>

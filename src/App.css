@@ -35,3 +35,17 @@ li.nav-item > a.active p {
   background-repeat: no-repeat;
   background-size: contain, cover;
 }
+
+.project-photo {
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.slide-content {
+text-align: center;
+}
+
+.slide-text {
+  color: yellow;
+}

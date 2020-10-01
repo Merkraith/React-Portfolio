@@ -3,17 +3,19 @@ import { makeStyles } from '@material-ui/core/styles';
 import '../../App.css';
 import Card from 'react-bootstrap/Card';
 import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
+// import Grid from '@material-ui/core/Grid';
 import Wrapper from "../../components/Wrapper";
 import Typography from '@material-ui/core/Typography';
-// import Seattle from '../../images/seattle.jpg'
+import Background from '../../images/background.png';
 
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        backgroundColor: '#212121',
+        // backgroundColor: '#212121',
+        backgroundImage: "url(" + Background + ")",
+        backgroundRepeat: true,
     },
     text: {
         color: 'white',
@@ -60,20 +62,18 @@ export default function ComplexGrid() {
             <div className={classes.appBarSpacer} />
 
             <Container className={classes.cardGrid} maxWidth="md">
-                <Grid className={classes.bg} justify="center" container spacing={4}>
-                    <Wrapper>
+                <Wrapper>
                     <Card className={classes.card} id="homecard" >
-                            <Typography className={classes.text} component="h1" variant="h2" align="center" color="white" gutterBottom >
-                                Mark Heil Portfolio
+                        <Typography className={classes.text} component="h1" variant="h2" align="center" color="white" gutterBottom >
+                            Mark Heil Portfolio
                             </Typography>
-                            <Typography className={classes.text2} variant="h6" align="center" color="white" paragraph>
-                                I am a Full Stack Web Developer in Seattle, WA
-                                Taking my experience of print production, how things look pleasant to the eye,
-                                and making a finished well polished product into the world of web development. 
+                        <Typography className={classes.text2} variant="h6" align="center" color="white" paragraph>
+                            I am a Full Stack Web Developer in Seattle, WA.
+                            I have taken my experience of print production, digital page layout, how things look appealing,
+                            and making a finished well polished product into the world of web development.
                             </Typography>
-                        </Card>
-                    </Wrapper>
-                </Grid>
+                    </Card>
+                </Wrapper>
             </Container>
             <div className={classes.appBarSpacer} />
         </div >

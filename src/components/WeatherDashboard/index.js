@@ -14,7 +14,7 @@ import DvrIcon from '@material-ui/icons/Dvr';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 500,
     margin: 20,
     paddingTop: 20,
     },

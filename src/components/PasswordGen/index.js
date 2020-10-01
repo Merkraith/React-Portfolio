@@ -15,15 +15,15 @@ import DvrIcon from '@material-ui/icons/Dvr';
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
+        maxWidth: 450,
         margin: 20,
-        paddingTop: 20,
+        // paddingTop: 20,
         },
     card: {
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        margin: 10,
+        // margin: 10,
 
     },
 });

@@ -22,7 +22,7 @@ function TopNavbar() {
                                 <NavLink to={"../../Pages/About"} className="link" activeClassName="active"><p className="nav-link pt-0 pb-0" id="aboutLink" data-toggle="collapse" data-target=".navbar-collapse.show">About</p></NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to={"../../Pages/GroupProjects"} className="link" activeClassName="active"><p className="nav-link pt-0 pb-0" id="groupProjectsLink" data-toggle="collapse" data-target=".navbar-collapse.show">Group Projects</p></NavLink>
+                                <NavLink to={"../../Pages/Collaborations"} className="link" activeClassName="active"><p className="nav-link pt-0 pb-0" id="collaborations" data-toggle="collapse" data-target=".navbar-collapse.show">Collaborations</p></NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink to={"../../Pages/Projects"} className="link" activeClassName="active"><p className="nav-link pt-0 pb-0 lastLink" id="projectsLink" data-toggle="collapse" data-target=".navbar-collapse.show">Projects</p></NavLink>
