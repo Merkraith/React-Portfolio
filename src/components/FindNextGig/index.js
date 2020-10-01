@@ -1,7 +1,4 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -17,14 +14,11 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Tooltip from '@material-ui/core/Tooltip';
 
 const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2),
-  },
-  cardGrid: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
   },
   card: {
     height: '100%',
@@ -48,19 +42,24 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
   },
   heading: {
-    fontSize: theme.typography.pxToRem(15),
+    fontSize: theme.typography.pxToRem(21),
     fontWeight: theme.typography.fontWeightRegular,
+    color: "lightblue",
   },
   text: {
     marginLeft: 20,
     marginRight: 20,
+    color: "lightblue",
+  },
+  text2: {
+    color: "lightblue",
   },
   cardGrid: {
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
   },
   bg: {
-    backgroundColor: 'lightblue',
+    backgroundColor: '#333333',
   }
 }));
 
@@ -71,38 +70,30 @@ export default function ImgMediaCard() {
   return (
 
     <div>
-
       <CssBaseline />
       <Container className={classes.cardGrid} maxWidth="md">
-        {/* <Grid justify="center" container spacing={4}> */}
         <Grid align="center" xs={12} sm={4} md={8} >
-          {/* <Card className={classes.card}> */}
+          <CardContent className={classes.cardContent}>
+            <Typography gutterBottom variant="h3" component="h3" className={classes.text2}>
+              Find Next Gig
+            </Typography>
+          </CardContent>
           <CardMedia
             className={classes.cardMedia}
             image={FindNextGig}
             title="Find Next Gig"
           />
-          <CardContent className={classes.cardContent}>
-            <Typography gutterBottom variant="h3" component="h3">
-              Find Next Gig
-              </Typography>
-            {/* <Typography>
-              "Find Next Gig" is a web based application
-              that allowed the user to type in the name of a band, then it would display information for their next gig.
-              It would also give a map display and put a pin on the city of the next gig.  With this project I was a collaborator and worked on the Front-End/CSS
-                                </Typography> */}
-          </CardContent>
           <div className={classes.root}>
             <Accordion className={classes.bg}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<ExpandMoreIcon className={classes.text2}/>}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
                 <Typography className={classes.heading}>Description</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
+                <Typography className={classes.text2}>
                   "Find Next Gig" is a web based application
                   that allowed the user to type in the name of a band, then it would display information for their next gig.
                   It would also give a map display and put a pin on the city of the next gig.
@@ -114,14 +105,14 @@ export default function ImgMediaCard() {
           <div className={classes.root}>
             <Accordion className={classes.bg}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<ExpandMoreIcon className={classes.text2}/>}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
                 <Typography className={classes.heading}>Technologies</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
+                <Typography className={classes.text2}>
                   HTML, CSS, Materialize-Css, Javascript, Mapbox API, Bandsintown API
                 </Typography>
               </AccordionDetails>
@@ -129,11 +120,14 @@ export default function ImgMediaCard() {
           </div>
           <Grid item xs={12} sm container className={classes.cardGrid}>
             <Grid container spacing={spacing} justify="center">
-              <Link href="https://github.com/Merkraith/Band-Tour-Manager"> <GitHubIcon style={{ color: "#212121" }} className={classes.text} fontSize="large" /></Link>
-              <Link href="https://merkraith.github.io/Band-Tour-Manager/"> <DvrIcon style={{ color: "#212121" }} className={classes.text} fontSize="large" /></Link>
+            <Tooltip title="GitHub" aria-label="GitHub">
+              <Link href="https://github.com/Merkraith/Band-Tour-Manager"> <GitHubIcon className={classes.text} fontSize="large" /></Link>
+              </Tooltip>
+              <Tooltip title="Deployed Link" aria-label="Deployed Link">
+              <Link href="https://merkraith.github.io/Band-Tour-Manager/"> <DvrIcon className={classes.text} fontSize="large" /></Link>
+              </Tooltip>
             </Grid>
           </Grid>
-          {/* </Card> */}
         </Grid>
       </Container>
     </div>

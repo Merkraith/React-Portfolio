@@ -14,14 +14,11 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Tooltip from '@material-ui/core/Tooltip';
 
 const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2),
-  },
-  cardGrid: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
   },
   card: {
     height: '100%',
@@ -45,19 +42,24 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
   },
   heading: {
-    fontSize: theme.typography.pxToRem(15),
+    fontSize: theme.typography.pxToRem(21),
     fontWeight: theme.typography.fontWeightRegular,
+    color: "lightblue",
   },
   text: {
     marginLeft: 20,
     marginRight: 20,
+    color: "lightblue",
+  },
+  text2: {
+    color: "lightblue",
   },
   cardGrid: {
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
   },
   bg: {
-    backgroundColor: 'lightblue',
+    backgroundColor: '#333333',
   }
 }));
 
@@ -74,30 +76,30 @@ export default function ImgMediaCard() {
         {/* <Grid justify="center" container spacing={4}> */}
         <Grid align="center" xs={12} sm={4} md={8} >
           {/* <Card className={classes.card}> */}
+          <CardContent className={classes.cardContent}>
+            <Typography gutterBottom variant="h3" component="h3" className={classes.text2}>
+              Dev Connect
+            </Typography>
+          </CardContent>
           <CardMedia
             className={classes.cardMedia}
             image={DevConnect}
             title="Dev Connect"
           />
-          <CardContent className={classes.cardContent}>
-            <Typography gutterBottom variant="h3" component="h3">
-              Dev Connect
-            </Typography>
-          </CardContent>
           <div className={classes.root}>
             <Accordion className={classes.bg}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<ExpandMoreIcon className={classes.text2}/>}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
                 <Typography className={classes.heading}>Description</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  "Dev Connect"  is an application that allows for developers to connect with each other.
+                <Typography className={classes.text2}>
+                  "Dev Connect" is an application that allows for developers to connect with each other.
                   The application allows for web developers to highlight their skills and connect with other developers
-                  to share knowledge and collaborate with one another. My collaboratorvrole was Front-End/CSS.
+                  to share knowledge and collaborate with one another. My collaborator role was Front-End/CSS.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -105,14 +107,14 @@ export default function ImgMediaCard() {
           <div className={classes.root}>
             <Accordion className={classes.bg}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<ExpandMoreIcon className={classes.text2}/>}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
                 <Typography className={classes.heading}>Technologies</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
+                <Typography className={classes.text2}>
                   HTML, CSS, Javascript, Node Express, Material-UI Framework, Sequelize.
                 </Typography>
               </AccordionDetails>
@@ -120,8 +122,12 @@ export default function ImgMediaCard() {
           </div>
           <Grid item xs={12} sm container className={classes.cardGrid}>
             <Grid container spacing={spacing} justify="center">
-              <Link href="https://github.com/patrick-merrick/project-three"> <GitHubIcon style={{ color: "#212121" }} className={classes.text} fontSize="large" /></Link>
-              <Link href="http://devconnexion.com/"> <DvrIcon style={{ color: "#212121" }} className={classes.text} fontSize="large" /></Link>
+            <Tooltip title="GitHub" aria-label="GitHub">
+                <Link href="https://github.com/patrick-merrick/project-three"> <GitHubIcon className={classes.text} fontSize="large" /></Link>
+              </Tooltip>
+              <Tooltip title="Deployed Link" aria-label="Deployed Link">
+                <Link href="http://devconnexion.com/"> <DvrIcon className={classes.text} fontSize="large" /></Link>
+              </Tooltip>
             </Grid>
           </Grid>
           {/* </Card> */}
