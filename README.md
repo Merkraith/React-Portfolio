@@ -9,11 +9,11 @@
 
 ## Description
 
-This is the most updated version of my personal portfolio. The application was built with React. It utilizes functional components, Links (react-router-dom), & Router (react-router-dom). The portfolio showcases an about page, group project page, & project page.
+This is the most updated version of my personal portfolio. The application was built with React with framework Material-UI and React-Bootstrap. It utilizes functional components, Links (react-router-dom), & Router (react-router-dom). The portfolio showcases an about page, group project page, & project page.
 
 ## Deployed Link
 
-https://secret-wave-70417.herokuapp.com/Pages/About
+https://secret-wave-70417.herokuapp.com/
 
 ## Screenshots
  
