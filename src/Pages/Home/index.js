@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import '../../App.css';
 import Card from 'react-bootstrap/Card';
 import Container from '@material-ui/core/Container';
-// import Grid from '@material-ui/core/Grid';
 import Wrapper from "../../components/Wrapper";
 import Typography from '@material-ui/core/Typography';
 import Background from '../../images/background.png';
@@ -18,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundRepeat: true,
     },
     text: {
-        color: 'white',
+        color: 'lightblue',
     },
     text2: {
         color: 'lightblue',
@@ -53,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function ComplexGrid() {
-    const [spacing, setSpacing] = React.useState(2);
+    // const [spacing, setSpacing] = React.useState(2);
     const classes = useStyles();
 
     return (
@@ -64,7 +63,7 @@ export default function ComplexGrid() {
             <Container className={classes.cardGrid} maxWidth="md">
                 <Wrapper>
                     <Card className={classes.card} id="homecard" >
-                        <Typography className={classes.text} component="h1" variant="h2" align="center" color="white" gutterBottom >
+                        <Typography className={classes.text} component="h1" variant="h2" align="center" color="lightblue" gutterBottom >
                             Mark Heil Portfolio
                             </Typography>
                         <Typography className={classes.text2} variant="h6" align="center" color="white" paragraph>
