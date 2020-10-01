@@ -1,5 +1,4 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import PasswordGen from '../../components/PasswordGen';
@@ -55,11 +54,14 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
     },
     appBarSpacer: theme.mixins.toolbar,
-    content: {
-        flexGrow: 1,
-        height: "100vh",
-        overflow: "auto",
+    
+    bg: {
+        backgroundColor: '#333333',
     },
+    text: {
+        color: 'lightblue',
+        flex: 1,
+    }
 }));
 
 export default function ScrollableTabsButtonAuto() {
@@ -75,16 +77,18 @@ export default function ScrollableTabsButtonAuto() {
             <div className={classes.appBarSpacer} />
             <div className={classes.appBarSpacer} />
             <Typography
+            className={classes.text}
                 align="center"
                 component="h1"
                 variant="h2"
                 color="white"
-
             >Projects
             </Typography>
+            <div className={classes.appBarSpacer} />
             <div className={classes.root}>
                 <AppBar position="static" color="default">
                     <Tabs
+                        className={classes.bg}
                         value={value}
                         onChange={handleChange}
                         indicatorColor="primary"
@@ -93,37 +97,34 @@ export default function ScrollableTabsButtonAuto() {
                         scrollButtons="auto"
                         aria-label="scrollable auto tabs example"
                     >
-                        <Tab label="1" {...a11yProps(0)} />
-                        <Tab label="2" {...a11yProps(1)} />
-                        <Tab label="3" {...a11yProps(2)} />
-                        <Tab label="4" {...a11yProps(3)} />
+                        <Tab className={classes.text} label="PW Gen" {...a11yProps(0)} />
+                        <Tab className={classes.text} label="FF Quiz" {...a11yProps(1)} />
+                        <Tab className={classes.text} label="Planner" {...a11yProps(2)} />
+                        <Tab className={classes.text} label="Weather Dashboard" {...a11yProps(3)} />
                     </Tabs>
                 </AppBar>
-                <TabPanel value={value} index={0}>
+                <TabPanel value={value} index={0} className={classes.bg}>
                     <div align="center">
                         <PasswordGen />
                     </div>
                 </TabPanel>
-                <TabPanel value={value} index={1}>
+                <TabPanel value={value} index={1} className={classes.bg}>
                     <div align="center">
                         <FFQuiz />
                     </div>
                 </TabPanel>
-                <TabPanel value={value} index={2}>
+                <TabPanel value={value} index={2} className={classes.bg}>
                     <div align="center">
                         <WorkdayPlanner />
                     </div>
                 </TabPanel>
-                <TabPanel value={value} index={3}>
+                <TabPanel value={value} index={3} className={classes.bg}>
                     <div align="center">
                         <WeatherDashboard />
                     </div>
                 </TabPanel>
-
             </div>
             <div className={classes.appBarSpacer} />
-            <div className={classes.appBarSpacer} />
-
         </Container>
     );
 }
