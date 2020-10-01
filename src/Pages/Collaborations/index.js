@@ -1,11 +1,4 @@
 import React from 'react';
-// import Button from '@material-ui/core/Button';
-// import Card from '@material-ui/core/Card';
-// import CardActions from '@material-ui/core/CardActions';
-// import CardContent from '@material-ui/core/CardContent';
-// import CardMedia from '@material-ui/core/CardMedia';
-// import CssBaseline from '@material-ui/core/CssBaseline';
-// import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -67,7 +60,12 @@ const useStyles = makeStyles((theme) => ({
         overflow: "auto",
     },
     bg: {
-        backgroundColor: 'lightblue',
+        backgroundColor: '#333333',
+    },
+    text: {
+        color: 'lightblue',
+        flexDirection: "column",
+        flex: 1,
     }
 }));
 
@@ -84,10 +82,10 @@ export default function ScrollableTabsButtonAuto() {
             <div className={classes.appBarSpacer} />
             <div className={classes.appBarSpacer} />
             <Typography
+                className={classes.text}
                 align="center"
-                component="h1"
-                variant="h2"
-                color="white"
+                component="h3"
+                variant="h3"
             >Collaborations
             </Typography>
             <div className={classes.appBarSpacer} />
@@ -103,10 +101,13 @@ export default function ScrollableTabsButtonAuto() {
                         scrollButtons="auto"
                         aria-label="scrollable auto tabs example"
                     >
-                        <Tab label="1" {...a11yProps(0)} />
-                        <Tab label="2" {...a11yProps(1)} />
-                        <Tab label="3" {...a11yProps(2)} />
-                    </Tabs> 
+                        <Tab className={classes.text}
+                            label="Find Next Gig" {...a11yProps(0)} />
+                        <Tab className={classes.text}
+                            label="Watcher" {...a11yProps(1)} />
+                        <Tab className={classes.text}
+                            label="Dev Connect" {...a11yProps(2)} />
+                    </Tabs>
                 </AppBar>
                 <TabPanel value={value} index={0} className={classes.bg}>
                     <div align="center">
@@ -115,12 +116,12 @@ export default function ScrollableTabsButtonAuto() {
                 </TabPanel>
                 <TabPanel value={value} index={1} className={classes.bg}>
                     <div align="center">
-                        <Watcher/>
+                        <Watcher />
                     </div>
                 </TabPanel>
                 <TabPanel value={value} index={2} className={classes.bg}>
                     <div align="center">
-                        <DevConnect/>
+                        <DevConnect />
                     </div>
                 </TabPanel>
             </div>
