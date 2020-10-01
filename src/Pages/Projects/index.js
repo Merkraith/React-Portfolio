@@ -62,6 +62,7 @@ const useStyles = makeStyles((theme) => ({
     text: {
         color: 'lightblue',
         flex: 1,
+        flexDirection: "column",
     }
 }));
 
@@ -98,11 +99,11 @@ export default function ScrollableTabsButtonAuto() {
                         scrollButtons="auto"
                         aria-label="scrollable auto tabs example"
                     >
-                        <Tab className={classes.text} label="PW Gen" {...a11yProps(0)} />
-                        <Tab className={classes.text} label="FF Quiz" {...a11yProps(1)} />
-                        <Tab className={classes.text} label="Planner" {...a11yProps(2)} />
-                        <Tab className={classes.text} label="Weather Dashboard" {...a11yProps(3)} />
-                        <Tab className={classes.text} label="Avengers Roster" {...a11yProps(4)} />
+                        <Tab className={classes.text} label="1" {...a11yProps(0)} />
+                        <Tab className={classes.text} label="2" {...a11yProps(1)} />
+                        <Tab className={classes.text} label="3" {...a11yProps(2)} />
+                        <Tab className={classes.text} label="4" {...a11yProps(3)} />
+                        <Tab className={classes.text} label="5" {...a11yProps(4)} />
 
                     </Tabs>
                 </AppBar>

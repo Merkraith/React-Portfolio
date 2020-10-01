@@ -101,12 +101,9 @@ export default function ScrollableTabsButtonAuto() {
                         scrollButtons="auto"
                         aria-label="scrollable auto tabs example"
                     >
-                        <Tab className={classes.text}
-                            label="Find Next Gig" {...a11yProps(0)} />
-                        <Tab className={classes.text}
-                            label="Watcher" {...a11yProps(1)} />
-                        <Tab className={classes.text}
-                            label="Dev Connect" {...a11yProps(2)} />
+                        <Tab className={classes.text} label="1" {...a11yProps(0)} />
+                        <Tab className={classes.text} label="2" {...a11yProps(1)} />
+                        <Tab className={classes.text} label="3" {...a11yProps(2)} />
                     </Tabs>
                 </AppBar>
                 <TabPanel value={value} index={0} className={classes.bg}>
