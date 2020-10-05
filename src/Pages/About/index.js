@@ -13,17 +13,19 @@ import Resume from '../../images/resume.pdf'
 import Card from '@material-ui/core/Card';
 import Container from '@material-ui/core/Container';
 import Wrapper from "../../components/Wrapper";
-import Fab from '@material-ui/core/Fab';
 import Tooltip from '@material-ui/core/Tooltip';
 import Bootstrap from '../../images/bootstrap.png';
 import Heroku from '../../images/heroku.png';
-import Htmlcssjs from '../../images/htmlcssjs.png';
 import Jquery from '../../images/jquery.png';
 import Materialize from '../../images/materialize.png';
 import MaterialUI from '../../images/materialui.png';
 import Mysql from '../../images/mysql.png';
 import Node from '../../images/node.png';
 import Reactlogo from '../../images/react.png';
+import Html from '../../images/html.png';
+import Css from '../../images/css.png';
+import Javascript from '../../images/javascript.png';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -149,7 +151,9 @@ export default function ComplexGrid() {
                                         Technologies
                                     </Typography>
                                     <Wrapper>
-                                        <img className={classes.img2} height="auto" alt="htmlcssjs" src={Htmlcssjs} />
+                                        <img className={classes.img2} height="auto" alt="html" src={Html} />
+                                        <img className={classes.img2} height="auto" alt="css" src={Css} />
+                                        <img className={classes.img2} height="auto" alt="javascript" src={Javascript} />
                                         <img className={classes.img2} height="auto" alt="jquery" src={Jquery} />
                                         <img className={classes.img2} height="auto" alt="bootstrap" src={Bootstrap} />
                                         <img className={classes.img2} height="auto" alt="node" src={Node} />
