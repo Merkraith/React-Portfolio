@@ -25,6 +25,7 @@ import Reactlogo from '../../images/react.png';
 import Html from '../../images/html.png';
 import Css from '../../images/css.png';
 import Javascript from '../../images/javascript.png';
+import Mongodb from '../../images/mongodb.png';
 
 
 
@@ -159,6 +160,7 @@ export default function ComplexGrid() {
                                         <img className={classes.img2} height="auto" alt="node" src={Node} />
                                         <img className={classes.img2} height="auto" alt="heroku" src={Heroku} />
                                         <img className={classes.img2} height="auto" alt="mysql" src={Mysql} />
+                                        <img className={classes.img2} height="auto" alt="mongodb" src={Mongodb} />
                                         <img className={classes.img2} height="auto" alt="materialize" src={Materialize} />
                                         <img className={classes.img2} height="auto" alt="react" src={Reactlogo} />
                                         <img className={classes.img2} height="auto" alt="materialui" src={MaterialUI} />
