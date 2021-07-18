@@ -7,18 +7,6 @@ import About from './Pages/About';
 import Collaborations from './Pages/Collaborations';
 import Projects from './Pages/Projects';
 
-
-// import Bootstrap from './images/bootstrap.png';
-// import Heroku from './images/heroku.png';
-// import Htmlcssjs from './images/htmlcssjs.png';
-// import Jquery from './images/jquery.png';
-// import Materialize from './images/materialize.png';
-// import MaterialUI from './images/materialui.png';
-// import Mysql from './images/mysql.png';
-// import Node from './images/node.png';
-// import Reactlogo from './images/react.png';
-// import Wrapper from "./components/Wrapper";
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -82,9 +70,9 @@ function App() {
         <div>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/Pages/About' component={About} />
-            <Route exact path='/Pages/Collaborations' component={Collaborations} />
-            <Route exact path='/Pages/Projects' component={Projects} />
+            <Route path='/Pages/About' component={About} />
+            <Route path='/Pages/Collaborations' component={Collaborations} />
+            <Route path='/Pages/Projects' component={Projects} />
           </Switch>
         </div>
         <div>
@@ -98,23 +86,3 @@ function App() {
   );
 }
 export default App;
-
-
-{/* <Typography
-                align="center"
-                component="h1"
-                variant="h2"
-                color="white"
-            >Technologies
-            </Typography>
-            <Wrapper>
-              <img className={classes.img} alt="htmlcssjs" src={Htmlcssjs} />
-              <img className={classes.img} alt="jquery" src={Jquery} />
-              <img className={classes.img} alt="bootstrap" src={Bootstrap} />
-              <img className={classes.img} alt="node" src={Node} />
-              <img className={classes.img} alt="heroku" src={Heroku} />
-              <img className={classes.img} alt="mysql" src={Mysql} />
-              <img className={classes.img} alt="materialize" src={Materialize} />
-              <img className={classes.img} alt="react" src={Reactlogo} />
-              <img className={classes.img} alt="materialui" src={MaterialUI} />
-            </Wrapper> */}

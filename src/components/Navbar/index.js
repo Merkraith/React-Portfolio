@@ -9,7 +9,7 @@ function TopNavbar() {
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Navbar.Brand>
-                <h4 className="my-name">Mark Heil</h4>
+                    <h4 className="my-name">Mark Heil</h4>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -19,7 +19,9 @@ function TopNavbar() {
                                 <NavLink to={"/"} className="link" exact activeClassName="active"><p className="nav-link pt-0 pb-0" id="aboutLink" data-toggle="collapse" data-target=".navbar-collapse.show">Home</p></NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to={"../../Pages/About"} className="link" activeClassName="active"><p className="nav-link pt-0 pb-0" id="aboutLink" data-toggle="collapse" data-target=".navbar-collapse.show">About</p></NavLink>
+                                <NavLink to={"../../Pages/About"} className="link" activeClassName="active">
+                                    <p className="nav-link pt-0 pb-0" id="aboutLink" data-toggle="collapse" data-target=".navbar-collapse.show">About</p>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink to={"../../Pages/Collaborations"} className="link" activeClassName="active"><p className="nav-link pt-0 pb-0" id="collaborations" data-toggle="collapse" data-target=".navbar-collapse.show">Collaborations</p></NavLink>

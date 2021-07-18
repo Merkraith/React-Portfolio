@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Watcher from '../../components/Watcher';
 import DevConnect from '../../components/DevConnect';
+import Parti from '../../components/Parti';
 import AppBar from '@material-ui/core/AppBar';
 import PropTypes from 'prop-types';
 import Tabs from '@material-ui/core/Tabs';
@@ -104,21 +105,32 @@ export default function ScrollableTabsButtonAuto() {
                         <Tab className={classes.text} label="1" {...a11yProps(0)} />
                         <Tab className={classes.text} label="2" {...a11yProps(1)} />
                         <Tab className={classes.text} label="3" {...a11yProps(2)} />
+                        <Tab className={classes.text} label="4" {...a11yProps(3)} />
                     </Tabs>
                 </AppBar>
                 <TabPanel value={value} index={0} className={classes.bg}>
                     <div align="center">
-                        <FindNextGig />
+                        <Parti />
                     </div>
                 </TabPanel>
                 <TabPanel value={value} index={1} className={classes.bg}>
                     <div align="center">
-                        <Watcher />
+                        <FindNextGig />
                     </div>
                 </TabPanel>
                 <TabPanel value={value} index={2} className={classes.bg}>
                     <div align="center">
+                        <Watcher />
+                    </div>
+                </TabPanel>
+                <TabPanel value={value} index={3} className={classes.bg}>
+                    <div align="center">
                         <DevConnect />
+                    </div>
+                </TabPanel>
+                <TabPanel value={value} index={2} className={classes.bg}>
+                    <div align="center">
+                        <Parti />
                     </div>
                 </TabPanel>
             </div>

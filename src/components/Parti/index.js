@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import DevConnect from '../../images/devconnect.png';
+import Parti from '../../images/parti.png';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import DvrIcon from '@material-ui/icons/Dvr';
 import Accordion from '@material-ui/core/Accordion';
@@ -76,13 +76,13 @@ export default function ImgMediaCard() {
         <Grid align="center" xs={10} sm={10} md={10} lg={10}>
           <CardContent className={classes.cardContent}>
             <Typography gutterBottom variant="h3" component="h3" className={classes.text2}>
-              Dev Connect
+              Parti Greetings
             </Typography>
           </CardContent>
           <CardMedia
             className={classes.cardMedia}
-            image={DevConnect}
-            title="Dev Connect"
+            image={Parti}
+            title="Parti"
           />
           <div className={classes.root}>
             <Accordion className={classes.bg}>
@@ -95,9 +95,8 @@ export default function ImgMediaCard() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={classes.text2}>
-                  "Dev Connect" is an application that allows for developers to connect with each other.
-                  The application allows for web developers to highlight their skills and connect with other developers
-                  to share knowledge and collaborate with one another. My collaborator role was Front-End/CSS.
+                 
+                Parti provides a new way to digitally celebrate events. Remove the need for video editing and time lost to long video montages, and take back the enjoyment of the celebration by viewing message and videos from friends, family, and colleagues. You can also revisit your events anytime you want and easily find the messages you'd like to see.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -113,7 +112,7 @@ export default function ImgMediaCard() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={classes.text2}>
-                  HTML, CSS, Javascript, Node Express, ReactJS, Material-UI, Sequelize.
+                  ReactJs, NodeJS, React-Bootstrap, MongoDB, DraftJS, EmailJS, Cloudinary API
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -121,10 +120,10 @@ export default function ImgMediaCard() {
           <Grid item xs={12} sm container className={classes.cardGrid}>
             <Grid container spacing={spacing} justify="center">
               <Tooltip title="GitHub" aria-label="GitHub">
-                <Link href="https://github.com/patrick-merrick/project-three"> <GitHubIcon className={classes.text} fontSize="large" /></Link>
+                <Link href="https://github.com/MVP-Marketplace/Parti-App"> <GitHubIcon className={classes.text} fontSize="large" /></Link>
               </Tooltip>
               <Tooltip title="Deployed Link" aria-label="Deployed Link">
-                <Link href="http://devconnexion.com/"> <DvrIcon className={classes.text} fontSize="large" /></Link>
+                <Link href="https://floating-ocean-70452.herokuapp.com/"> <DvrIcon className={classes.text} fontSize="large" /></Link>
               </Tooltip>
             </Grid>
           </Grid>

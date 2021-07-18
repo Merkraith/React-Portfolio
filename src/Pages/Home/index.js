@@ -65,12 +65,12 @@ export default function ComplexGrid() {
                     <Card className={classes.card} id="homecard" >
                         <Typography className={classes.text} component="h1" variant="h2" align="center" color="lightblue" gutterBottom >
                             Mark Heil Portfolio
-                            </Typography>
+                        </Typography>
                         <Typography className={classes.text2} variant="h6" align="center" color="white" paragraph>
                             I am a Full Stack Web Developer in Seattle, WA.
                             I have taken my experience of print production, digital page layout, how things look appealing,
                             and making a finished well polished product into the world of web development.
-                            </Typography>
+                        </Typography>
                     </Card>
                 </Wrapper>
             </Container>

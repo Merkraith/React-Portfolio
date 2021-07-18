@@ -140,7 +140,7 @@ export default function ScrollableTabsButtonAuto() {
                         <Rockband />
                     </div>
                 </TabPanel>
-                <TabPanel value={value} index={6} className={classes.bg}>
+                <TabPanel value={value} index={6} className={classes.bg}>e
                     <div align="center">
                         <NoteTaker />
                     </div>

@@ -97,7 +97,7 @@ export default function ImgMediaCard() {
                   "Find Next Gig" is a web based application
                   that allowed the user to type in the name of a band, then it would display information for their next gig.
                   It would also give a map display and put a pin on the city of the next gig.
-                  My collaboratorvrole was Front-End/CSS.
+                  My collaborator role was Front-End/CSS.
                 </Typography>
               </AccordionDetails>
             </Accordion>
